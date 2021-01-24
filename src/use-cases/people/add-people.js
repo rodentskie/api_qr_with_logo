@@ -7,26 +7,6 @@ const addPeople = ({
   fs,
 }) => {
   return async function post(info) {
-    // NOTE: Adding of people will only be from KoBo
-
-    /*
-    // validate access rights
-    if (!info.accessRights)
-      throw new Error(
-        `You're not authorized, please contact your Administrator.`
-      );
-    const isAllowed = validateAccessRights(
-      info.accessRights,
-      "admin",
-      "add modules"
-    );
-
-    if (!isAllowed)
-      throw new Error(
-        `You're not authorized, please contact your Administrator.`
-      );
-    */
-
     const data = await makePeoples(info);
 
     const people = {
@@ -81,9 +61,8 @@ const addPeople = ({
     const send = await sendEmail(mailInfo);
     console.log(send); // check in docker logs
 
-
     // ##
-    const msg = `User has been added successfully.`; // dummy return 
+    const msg = `User has been added successfully.`; // dummy return
 
     return msg;
   };
