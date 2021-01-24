@@ -1,0 +1,32 @@
+{
+  "name": "api_qr_with_logo",
+  "version": "1.0.0",
+  "description": "Generate a QR with center logo then email as attachment",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app",
+    "dev": "nodemon src/app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodentskie/api_qr_with_logo.git"
+  },
+  "author": "Rodney Lingganay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodentskie/api_qr_with_logo/issues"
+  },
+  "homepage": "https://github.com/rodentskie/api_qr_with_logo#readme",
+  "dependencies": {
+    "basic-auth": "^2.0.1",
+    "canvas": "^2.6.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.4.17",
+    "qrcode": "^1.4.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
